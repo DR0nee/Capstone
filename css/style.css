@@ -1,0 +1,14 @@
+/* Universal css */
+
+html {
+
+}
+
+/* Header Css */
+
+header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+
+}
