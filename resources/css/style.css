@@ -1,0 +1,43 @@
+/* Universal css */
+
+html {
+    font-size: 16px;
+}
+
+/* Header Css */
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+
+.navbar  {
+  display: flex;
+  padding-right: 1.5rem;
+  align-items: center;
+}
+
+.navbar ul li {
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+/* bannercontainer Css */
+
+.bannercontainer {
+  display: flex;
+  background-color: lightgrey;
+}
+
+.bannercontainer img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
