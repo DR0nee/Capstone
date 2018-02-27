@@ -43,7 +43,13 @@ h3 {
   padding-top: 1rem;
 }
 
+.mobile-nav {
+  display: none;
+}
 
+.mobile-coursenav {
+  display: none;
+}
 /* Header Css */
 
 header {
@@ -233,14 +239,123 @@ header {
 
 /* Footer Css  */
 
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   height: 5rem;
   border-top: solid lightgrey 1px;
 }
 
-footer p {
+.footer p {
   font-size: 0.8rem;
   padding: 1rem 1.5rem;
 }
+
+/* Mobile screen Css */
+
+@media only screen and (max-width: 470px) {
+
+ /* global */
+
+ .right, .left {
+   width: 100%;
+ }
+
+ .left {
+   padding: 0rem;
+ }
+
+/* mobile header Css */
+
+ .logo, .navbar {
+   display: none;
+ }
+
+ .mobile-nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+ }
+
+ /* mobile bannercontainer css */
+
+ .bannercontainer {
+   flex-direction: column;
+   align-items: center;
+ }
+
+
+
+ .bannercontainer .right {
+   width: 100%;
+   align-items: center;
+   padding: 2rem 1rem;
+ }
+
+ .bannercontainer .right a{
+   width: 85%;
+ }
+
+/* mobile info container Css */
+
+  .infocontainer .left {
+    display: none;
+  }
+
+  .infocontainer .right {
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .sidecontainer {
+    flex-direction: column;
+}
+
+  .sidecontainer img {
+    width: auto;
+  }
+
+  .sideinfo {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+ /* learncontainer Css */
+
+ .learncontainer {
+   background-color: ghostwhite;
+   border-bottom: lightgrey 1px solid;
+ }
+
+ .courses {
+   padding: 1rem;
+ }
+
+ .coursetypes {
+   display: none;
+ }
+
+ .mobile-coursenav {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .mobile-coursenav a {
+   color: dimgrey;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 1rem 0rem 1.5rem 1rem;
+   margin-bottom: 1rem;
+   background-color: lightgrey;
+   text-align: center;
+ }
+
+
+  /* Mobile Exibit Css */
+
+  .exibitcontainer .right {
+    display: none;
+  }
