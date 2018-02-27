@@ -40,6 +40,7 @@ h3 {
 
 .right {
   width: 40%;
+  padding-top: 1rem;
 }
 
 
@@ -142,7 +143,7 @@ header {
   border-left: solid lightgrey 1px;
 }
 
-.infocontainer .left, .right {
+.infocontainer .left, .infocontainer .right {
   padding-bottom: 2rem;
 }
 
@@ -150,6 +151,7 @@ header {
 
 .sidecontainer {
   display: flex;
+  transition: background-color 1s linear 0s;
 }
 
 .sidecontainer img {
@@ -174,6 +176,71 @@ header {
   text-decoration: none;
 }
 
-#greysideinfo {
+.right .sidecontainer:hover {
   background-color: lightgrey;
+}
+
+/* learncontainer Css */
+
+.learncontainer {
+  background-color: lavender;
+}
+
+.learncontainer h2 {
+  text-align: center;
+}
+
+.courses {
+  padding: 0rem 3.5rem 1rem 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coursetypes {
+  background-color: white;
+  margin: 1rem 1rem;
+
+}
+.coursetypes img {
+  height: auto;
+  width: 28rem;
+}
+
+.courseinfo {
+  padding: 1rem 0rem 1.5rem 1rem;
+}
+
+.courseinfo p {
+  padding: 0.5rem 0rem;
+}
+
+/* exibitcontainer Css */
+
+.exibitcontainer h2 {
+  text-align: center;
+  padding-bottom: 0rem;
+}
+
+.flexcontainer {
+  display: flex;
+}
+
+.flexcontainer h3 {
+  padding-top: 1.5rem;
+}
+
+
+/* Footer Css  */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  border-top: solid lightgrey 1px;
+}
+
+footer p {
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem;
 }
