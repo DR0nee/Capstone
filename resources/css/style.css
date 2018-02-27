@@ -1,8 +1,47 @@
-/* Universal css */
+/* Global css */
 
 html {
     font-size: 16px;
 }
+
+body {
+  font-family: 'Roboto Mono', monospace, sans-serif;
+  color: dimgrey;
+  background-color: ghostwhite;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.bigpic {
+  width: 100%;
+}
+
+.left {
+    padding: 2rem 1.5rem;
+    width: 60%
+  }
+
+.right {
+  width: 40%;
+}
+
 
 /* Header Css */
 
@@ -10,6 +49,7 @@ header {
   height: 4rem;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 
 .logo {
@@ -18,6 +58,20 @@ header {
   padding-left: 1.5rem;
 }
 
+.logo span {
+  color: lightgrey;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo strong {
+  color: black;
+}
+
+.logo img {
+  height: 3rem;
+}
 
 .navbar  {
   display: flex;
@@ -26,8 +80,17 @@ header {
 }
 
 .navbar ul li {
-  padding-left: 1rem;
   display: inline-block;
+}
+
+.navbar a {
+  color: black;
+  padding: 1.4rem 0.5rem;
+  transition: background-color 1s linear 0s;
+}
+
+.navbar a:hover {
+  background-color: silver;
 }
 
 /* bannercontainer Css */
@@ -37,7 +100,80 @@ header {
   background-color: lightgrey;
 }
 
-.bannercontainer img {
+.bannercontainer .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%
+}
+
+.bannercontainer a {
+  padding: 0.5rem 1rem;
+  background-color: darkslategrey;
   width: 60%;
-  padding: 2rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: lightgrey;
+  transition: font-size 1s linear 0s,
+  color 1s linear 0s;
+}
+
+.bannercontainer a:hover {
+  font-size: 2rem;
+  color: black;
+}
+
+/* infocontainer Css */
+
+.infocontainer {
+  display: flex;
+  }
+
+.infocontainer h2 {
+  padding-bottom: 1.5rem;
+}
+
+.infocontainer .left p {
+  padding-bottom: 2rem;
+}
+
+.infocontainer .right {
+  border-left: solid lightgrey 1px;
+}
+
+.infocontainer .left, .right {
+  padding-bottom: 2rem;
+}
+
+/* sidecontainer Css */
+
+.sidecontainer {
+  display: flex;
+}
+
+.sidecontainer img {
+  width: 35%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.sideinfo {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sideinfo h3, span {
+  padding-bottom: 0.5rem;
+}
+
+.sideinfo a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+#greysideinfo {
+  background-color: lightgrey;
 }
