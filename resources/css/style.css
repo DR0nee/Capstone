@@ -359,3 +359,9 @@ header {
   .exibitcontainer .right {
     display: none;
   }
+
+  .exibitcontainer .left h3,p {
+    display: none
+  }
+
+}
