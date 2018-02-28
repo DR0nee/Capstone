@@ -43,11 +43,7 @@ h3 {
   padding-top: 1rem;
 }
 
-.mobile-nav {
-  display: none;
-}
-
-.mobile-coursenav {
+.mobile-nav, .mobile-coursenav, .mobileimg {
   display: none;
 }
 
@@ -327,6 +323,16 @@ header {
 
   .sidecontainer img {
     width: auto;
+    height: 15rem;
+  }
+
+  .sidecontainerimg{
+    display: none;
+    width: 100%;
+  }
+
+  .mobileimg {
+    display: block;
   }
 
   .sideinfo {
