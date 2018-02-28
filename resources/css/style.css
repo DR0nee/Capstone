@@ -322,13 +322,12 @@ header {
   }
 
   .sidecontainer img {
-    width: auto;
-    height: 15rem;
+    width: 25.4rem;
+
   }
 
   .sidecontainerimg{
     display: none;
-    width: 100%;
   }
 
   .mobileimg {
