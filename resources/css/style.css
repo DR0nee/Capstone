@@ -50,6 +50,13 @@ h3 {
 .mobile-coursenav {
   display: none;
 }
+
+/*  only flex */
+
+.infocontainer, .flexcontainer {
+  display: flex;
+  }
+
 /* Header Css */
 
 header {
@@ -133,10 +140,6 @@ header {
 
 /* infocontainer Css */
 
-.infocontainer {
-  display: flex;
-  }
-
 .infocontainer h2 {
   padding-bottom: 1.5rem;
 }
@@ -211,6 +214,12 @@ header {
 .coursetypes img {
   height: auto;
   width: 28rem;
+  opacity: 0.7;
+  transition: opacity 1s linear;
+}
+
+.coursetypes img:hover {
+  opacity: 1;
 }
 
 .courseinfo {
@@ -228,10 +237,6 @@ header {
   padding-bottom: 0rem;
 }
 
-.flexcontainer {
-  display: flex;
-}
-
 .flexcontainer h3 {
   padding-top: 1.5rem;
 }
@@ -246,7 +251,7 @@ header {
   border-top: solid lightgrey 1px;
 }
 
-.footer p {
+.footer p, .footer span {
   font-size: 0.8rem;
   padding: 1rem 1.5rem;
 }
@@ -351,8 +356,14 @@ header {
    margin-bottom: 1rem;
    background-color: lightgrey;
    text-align: center;
+   transition: background-color 1s linear 0s,
+   font-size 1s linear 0s;
  }
 
+ .mobile-coursenav a:hover {
+   background-color: darkgrey;
+   font-size: 1.3rem;
+ }
 
   /* Mobile Exibit Css */
 
@@ -360,8 +371,29 @@ header {
     display: none;
   }
 
-  .exibitcontainer .left h3,p {
+  .exibitcontainer .left h3,
+    .exibitcontainer .left p {
     display: none
   }
 
+  .exibitcontainer .left {
+    padding-bottom: 1.5rem;
+  }
+
+  .exibitcontainer h2 {
+    padding-bottom: 2rem;
+  }
+
+ /* Mobile Footer Css */
+
+ .footer span {
+   display: none;
+ }
+
+ .footer {
+   align-items: center;
+   font-size: 0.7rem;
+   height: auto;
+   border: none;
+ }
 }
