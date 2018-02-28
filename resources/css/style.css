@@ -279,8 +279,16 @@ header {
  .mobile-nav {
    display: flex;
    justify-content: space-around;
-   align-items: center;
    width: 100%;
+ }
+
+ .mobile-nav img {
+   padding: 1rem;
+   transition: background-color 1s linear;
+ }
+
+ .mobile-nav img:hover {
+   background-color: silver;
  }
 
  /* mobile bannercontainer css */
@@ -288,9 +296,7 @@ header {
  .bannercontainer {
    flex-direction: column;
    align-items: center;
- }
-
-
+  }
 
  .bannercontainer .right {
    width: 100%;
@@ -316,7 +322,7 @@ header {
 
   .sidecontainer {
     flex-direction: column;
-}
+  }
 
   .sidecontainer img {
     width: auto;
@@ -367,12 +373,9 @@ header {
 
   /* Mobile Exibit Css */
 
-  .exibitcontainer .right {
-    display: none;
-  }
-
   .exibitcontainer .left h3,
-    .exibitcontainer .left p {
+  .exibitcontainer .left p,
+  .exibitcontainer .right {
     display: none
   }
 
